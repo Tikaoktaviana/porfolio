@@ -1,0 +1,45 @@
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #efa3c8;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 10px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: #dd428d;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.text-home{
+    text-align: right;
+}
+
+.text-home .p {
+  position: relative;
+  margin: -3rem 0 2rem 1rem;
+  padding: 1rem;
+  background: rgba(white, 0.8);
+}
