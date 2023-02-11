@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Noto+Serif+JP:wght@300&display=swap');
 
 
+
+body{
+  background-color: #fbe2ef;
+  font-family: 'Comic Neue', cursive;
+  margin: 0;
+  padding: 0;
+  cursor: url(help)auto;
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -7,39 +16,238 @@
 
 .topnav {
   overflow: hidden;
-  background-color: #efa3c8;
+  background-color: #dd428d;
 }
-
+.home-img{
+  padding-top: 5px;
+}
 .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 12px 10px;
+  padding: 12px 16px;
   text-decoration: none;
   font-size: 17px;
-
+  padding-top: 20px;
 }
 
 .topnav a:hover {
-  background-color: #dd428d;
+  background-color: #ffb7da;
+  height: 40px;
   color: black;
+  border-radius: 20px;
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.topnav-right {
+.topnav-right  {
   float: right;
 }
 .text-home{
     text-align: right;
 }
 
-.text-home .p {
+/**tetst **/
+.col-text {
+  height:20em;
+}
+.grid-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 430px;
+  float: left;
+  justify-content: space-between;
+}
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+}
+.Aligner-item {
+  width: 60%;
+  font-size: 25px;
+}
+.col-image {
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+
+}
+@media (max-width: 640px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+   }
+  .col {
+    order:vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text div p {
+    padding: 1em;
+    
+  }
+  .Aligner-item {
+    width: 90%;
+  }
+}
+.text-name{
+  padding-left: 30px;
+  
+}
+.home-img {
+ margin-top:-10px;
+
+}
+
+/**sakura-animasi**/
+/*-----------------------------------
+sakura_block
+-----------------------------------*/
+#sakura_block{
+  width: 100%;
+}
+#sakura_block .sakura_parts_box{
   position: relative;
-  margin: -3rem 0 2rem 1rem;
-  padding: 1rem;
-  background: rgba(white, 0.8);
+}
+#sakura_block .sakura_parts_box img{
+  position: absolute;
+}
+#sakura_block .sakura_parts_box img:nth-child(2n+1){
+  width: 13px;/*花びらのサイズ*/
+}
+#sakura_block .sakura_parts_box img:nth-child(2n){
+  width: 15px;/*花びらのサイズ*/
+}
+
+/*-----------------------------------
+桜の花びらパーツの表示位置
+-----------------------------------*/
+img.parts_01{top: 0; left: 5%;}
+img.parts_02{top: 0; left: 12%;}
+img.parts_03{top: 0; left: 15%;}
+img.parts_04{top: 0; left: 22%;}
+img.parts_05{top: 0; left: 25%;}
+img.parts_06{top: 0; left: 28%;}
+img.parts_07{top: 0; left: 35%;}
+img.parts_08{top: 0; left: 40%;}
+img.parts_09{top: 0; left: 43%;}
+img.parts_10{top: 0; left: 50%;}
+img.parts_11{top: 0; left: 55%;}
+img.parts_12{top: 0; left: 60%;}
+img.parts_13{top: 0; left: 63%;}
+img.parts_14{top: 0; left: 70%;}
+img.parts_15{top: 0; left: 75%;}
+img.parts_16{top: 0; left: 81%;}
+img.parts_17{top: 0; left: 85%;}
+img.parts_18{top: 0; left: 90%;}
+img.parts_19{top: 0; left: 93%;}
+
+
+/*-----------------------------------
+舞い散るアニメーション
+回転しつつ上から下へ
+-----------------------------------*/
+@keyframes sakura {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      transform:translate(3px,30px) rotate(20deg);
+      opacity: 1;
+    }
+    30% {
+      transform:translate(0,50px) rotate(50deg);
+    }
+    50% {
+      transform:translate(-20px,100px)  rotate(150deg);
+    }
+    70% {
+      transform:translate(-40px,150px) rotate(-50deg);
+      opacity: .8;
+    }
+    90% {
+      transform:translate(-60px,200px) rotate(-180deg);
+    }
+    100% {
+      transform:translate(-70px,230px);
+      opacity: 0;
+    }
+}
+
+.sakura_parts_box img {
+    animation: sakura linear 6s infinite;
+    /*アニメーションが始まるまで画像を見えなくしておく*/
+    opacity: 0;
+}
+
+/*-----------------------------------
+アニメーションが始まるまでの時間
+-----------------------------------*/
+img.parts_01,img.parts_04,img.parts_07,img.parts_10,img.parts_08,img.parts_11,img.parts_13,img.parts_16,img.parts_19{
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+img.parts_02,img.parts_05{
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+img.parts_03,img.parts_06,img.parts_09,img.parts_12{
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+img.parts_08,img.parts_11,img.parts_13,img.parts_16,img.parts_19{
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+img.parts_14,img.parts_17{
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+img.parts_15,img.parts_18{
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.zoom {
+  padding: 50px;
+  background-image: url();
+  background-repeat: no-repeat;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
