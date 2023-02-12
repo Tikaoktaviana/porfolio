@@ -46,59 +46,73 @@ body{
 }
 
 /**tetst **/
-.cont-sosmed {
-    background: transparent;
-	height: 100px;
-    margin: 5% auto;
-    max-width: 600px;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-}
-.cont-sosmed ul {
-    font-family: "trebuchet ms",sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: normal;
-    list-style: none !important;;
-    margin: 0 10px;
-    padding: 10px;
-    text-align: center;
-}
-.cont-sosmed ul li {
-    display: inline-block;
-    float: left;
-    margin: 0;
-    padding: 10px;
-    justify-content: space-between;
-    transition: all 1s ease 0s;
-    width: 50%;
-}
-.cont-sosmed ul li:hover {
-    width: 100%;
-}
-.cont-sosmed ul li a {
-    color: #fff !important;
-	display: block;
-	padding: 5px 0;
-    text-decoration: none;
-}
-li.sosial-gmail {
-    background: #d38baf !important;
-    left: 0;
-    top: 0;
-	z-index: 10;
-    border-radius: 20px;
-}
-li.sosial-insta {
-    background:  #f8b7e0 !important;
-    right: 0;
-    top: 0;
-    border-radius: 20px;
+.cont-sosmed{
+  text-decoration: none;
+  display: inline-block;
+  height: 100px;
+  margin: 5% auto;
+  max-width: 1000px;
+  padding: 10px;
+  position: relative;
+  width: 100%;
 
 }
-li.sosial-gp:hover, li.sosial-tw:hover {
-    z-index: 10;
+.cont-sosmed ul{
+  font-family: "trebuchet ms",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none !important;
+  margin: 100px 500px;
+  
+}
+.cont-sosmed ul li{
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 1000px;
+  justify-content: space-between;
+  transition: all 1s ease 0s;
+  width: 100%;
+
+}
+.cont-sosmed ul li:hover {
+  width: 90%;
+}
+
+.cont-sosmed ul li {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 10px;
+  justify-content: space-between;
+  transition: all 1s ease 0s;
+  width: 80%;
+  padding-top: 10px;
+  
+}
+li.sosial-insta {
+  background: #f8b7e0 !important;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+li.sosial-gmail {
+  background: #d38baf !important;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  border-radius: 20px;
+}
+.cont-sosmed ul li a {
+  color: #fff !important;
+  text-decoration: none;
+  padding: 0 20px;
+}
+li .sosial-insta i a{
+  padding: 100px;
 }
 @media (max-width: 640px) {
   .grid-flex {
@@ -240,4 +254,32 @@ img.parts_14,img.parts_17{
 img.parts_15,img.parts_18{
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
+}
+/***test35**/
+
+
+
+.naglowek {
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+#navigation a div {
+  text-align: center;
+  font-size: 1.2em;
+  width: 400px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(246, 129, 195);
+  padding: 10px 0px;
+  margin: 0px 1px 1px 0px;
+  border-radius: 3px;
+}
+
+#navigation a div:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(183, 48, 87);
+  border: 1px solid rgb(173, 73, 73);
+  border-bottom: none;
 }
