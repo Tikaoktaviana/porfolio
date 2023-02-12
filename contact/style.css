@@ -84,19 +84,18 @@ body{
     text-decoration: none;
 }
 li.sosial-gmail {
-    background: #f13894 !important;
+    background: #d38baf !important;
     left: 0;
     top: 0;
 	z-index: 10;
+    border-radius: 20px;
 }
 li.sosial-insta {
-    background-image: url(./img/instagram.png);
-    background:  #f45ebd !important;
+    background:  #f8b7e0 !important;
     right: 0;
     top: 0;
-}
-.sosial-insta{
- background-image: url(./img/gmail.png);
+    border-radius: 20px;
+
 }
 li.sosial-gp:hover, li.sosial-tw:hover {
     z-index: 10;
