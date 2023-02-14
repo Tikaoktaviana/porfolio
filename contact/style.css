@@ -260,21 +260,27 @@ img.parts_15,img.parts_18{
 
 
 .naglowek {
-  text-align: center;
-  padding: 10px;
-  justify-content: center;
+  margin: 200px auto;
+  max-width:300px;
+ 
 }
 
 #navigation a div {
-  text-align: center;
   font-size: 1.2em;
-  width: 400px;
+  width: 300px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   background-color: rgb(246, 129, 195);
-  padding: 10px 0px;
-  margin: 0px 1px 1px 0px;
   border-radius: 3px;
+
+}
+
+#navigation a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 10px;
 }
 
 #navigation a div:hover {
