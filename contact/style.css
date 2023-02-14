@@ -265,27 +265,34 @@ img.parts_15,img.parts_18{
  
 }
 
-#navigation a div {
+#navigation a{
   font-size: 1.2em;
   width: 300px;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  background-color: rgb(246, 129, 195);
   border-radius: 3px;
-
 }
 
 #navigation a{
   text-decoration: none;
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding-bottom: 10px;
+  gap: 5px;
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 
-#navigation a div:hover {
+#navigation a:hover {
   color: rgb(255, 255, 255);
   background: rgb(183, 48, 87);
   border: 1px solid rgb(173, 73, 73);
   border-bottom: none;
+}
+.gmail{
+  background-color: #f9418b;
+}
+.ig{
+  background-color: #f755b1;
+}
+.gmail a{
+  padding-top: 100px;
 }
