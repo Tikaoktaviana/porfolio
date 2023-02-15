@@ -283,15 +283,19 @@ img.parts_15,img.parts_18{
 
 #navigation a:hover {
   color: rgb(255, 255, 255);
-  background: rgb(183, 48, 87);
+  background: #f77bac;
   border: 1px solid rgb(173, 73, 73);
   border-bottom: none;
 }
 .gmail{
-  background-color: #f9418b;
+  background-color: #f4d1e5;
+  border-radius: 10px;
 }
 .ig{
-  background-color: #f755b1;
+  background-color:#f4d1e5 ;
+  border-radius: 10px;
+  border-color: #000000;
+  margin-top: 5px;
 }
 .gmail a{
   padding-top: 100px;

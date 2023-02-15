@@ -7,7 +7,7 @@ body{
   font-family: 'Comic Neue', cursive;
   margin: 0;
   padding: 0;
-  cursor: url(help)auto;
+  box-sizing: border-box;
 }
 .topnav {
   overflow: hidden;
@@ -236,18 +236,11 @@ img.parts_15,img.parts_18{
   animation-delay: 5s;
 }
 
-.zoom {
-  padding: 50px;
-  background-image: url();
-  background-repeat: no-repeat;
-  transition: transform .2s;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
+.sakura-background{
+  float: right;
+  position: relative;
+  text-align: center ;
 }
-
-.zoom:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+.sakura-background img{
+ height: 50%;
 }
