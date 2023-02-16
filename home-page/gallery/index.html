@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body class="gallery-page">
+    <!--header-->
+
+    <header class="header">
+        <div class="nav-wrapper">
+            <div class="nav">
+                <ul>
+                    <li class="home">
+                        <a href="index.html">
+                             <img src="img/blob.png" alt="">
+                        </a>
+                    </li>
+                    <li class="about">
+                        <a href="about.html">
+                            about
+                        </a>
+                    </li>
+                    <li class="gallery">
+                        <a href="gallery.html" class="hov-work">
+                            gallery
+                        </a>
+                    </li>
+                    <li class="contact">
+                        <a href="contact.html">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="main-wrapper">
+            <div class="ill-wrapper">
+                <div class="ill-title">
+                    <h2>
+                        Illustration
+                    </h2>
+                </div>
+                <!--illustration-->
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/under.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/campfirenew.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Devotion.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/さとう.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/fate shattered.png" alt="">
+                    </div>
+                    </div>
+
+                    <!--next, prev-->
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <div class="page-wrapper">
+                    <div class="page-tittle">
+                        <h2>
+                            Web pages
+                        </h2>
+                    </div>
+                    <div class="page-box">
+                        <div class="box-1">
+                            <a href="#">
+                                <img src="img/resto-page.jpg" alt="">
+                            </a>
+                            <p>
+                                Internship Design <br>
+                                Restaurant Menu Design
+                            </p>
+                        </div>
+                        <div class="box-2">
+                            <a href="#">
+                                <img src="img/hotel-page.jpg" alt="">
+                            </a>
+                            <p>
+                                Internship Design <br>
+                                Hotel Website Design
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="foot-wrapper">
+            <div class="text-bot">
+                <p>
+                    by Mochirazu
+                </p>
+            </div>
+            <div class="cc">
+                <ul class="cc-img">
+                    <li>
+                        <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+                            <img src="img/cc_icon_white_x2.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+                            <img src="img/attribution_icon_white_x2.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+                            <img src="img/nc_white_x2.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+                            <img src="img/nd_white_x2.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+            var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+</body>
+</html>

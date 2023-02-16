@@ -300,3 +300,11 @@ img.parts_15,img.parts_18{
 .gmail a{
   padding-top: 100px;
 }
+.sakura-background{
+  float: right;
+  position: relative;
+  text-align: center ;
+}
+.sakura-background img{
+ height: 50%;
+}
