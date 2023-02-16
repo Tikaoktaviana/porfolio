@@ -8,7 +8,7 @@ body{
   font-family: 'Comic Neue', cursive;
   margin: 0;
   padding: 0;
-  cursor: url(help)auto;
+  box-sizing: border-box;
 }
 .topnav {
   overflow: hidden;
@@ -35,7 +35,7 @@ body{
 .topnav a:hover {
   background-color: #ffb7da;
   height: 40px;
-  color: black;
+  color: #ed488a;
   border-radius: 20px;
 }
 
@@ -262,15 +262,16 @@ img.parts_15,img.parts_18{
 
 .naglowek {
   margin: 200px auto;
-  max-width:300px;
+  max-width:350px;
+  padding-left: 10px;
  
 }
 
 #navigation a{
   font-size: 1.2em;
-  width: 300px;
+  width: 350px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border-radius: 3px;
 }
 
@@ -285,27 +286,45 @@ img.parts_15,img.parts_18{
 #navigation a:hover {
   color: rgb(255, 255, 255);
   background: #f77bac;
-  border: 1px solid rgb(173, 73, 73);
+  border: 1px solid rgb(255, 255, 255);
   border-bottom: none;
+  border-radius: 10px;
 }
 .gmail{
-  background-color: #f4d1e5;
+  background-color: #ff90cf;
   border-radius: 10px;
+  border-color: #ffffff;
+
 }
 .ig{
-  background-color:#f4d1e5 ;
+  background-color:#f999cf ;
   border-radius: 10px;
-  border-color: #000000;
+  border-color: #ffffff;
   margin-top: 5px;
+}
+.ig a{
+  padding-top: 100px;
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 .gmail a{
   padding-top: 100px;
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:rgb(255, 255, 255)d;
 }
-.sakura-background{
-  float: right;
-  position: relative;
-  text-align: center ;
+
+.footer {
+  background-image: url(./img-contact/sakura-tree2.png);
+  background-color: #ffd5ea;
+  background-size: cover;
+  text-align: center;
+  height: 50px;
+  width: auto;
+  font-family: sans-serif;
+  padding-top: 15px;
+  bottom: -10px;
 }
-.sakura-background img{
- height: 50%;
+.footer-copy img{
+ width: 25px;
 }

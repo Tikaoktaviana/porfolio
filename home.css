@@ -54,14 +54,7 @@ body{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  flex-direction: row; 
-  -webkit-flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -webkit-justify-content: space-around;
+
 }
 .col {
   -webkit-box-flex: 1;
@@ -96,7 +89,6 @@ body{
 }
 @media (max-width: 640px) {
   .grid-flex {
-    height: 40em;
     display: -webkit-flex;
     -webkit-flex-direction: column;
     flex-direction: column; 
@@ -109,9 +101,6 @@ body{
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0;
-  }
-  .col-text div p {
-    padding: 1em;
     
   }
   .Aligner-item {
@@ -243,4 +232,19 @@ img.parts_15,img.parts_18{
 }
 .sakura-background img{
  height: 50%;
+}
+
+.footer-copy {
+  background-color: #ffd5ea;
+  text-align: center;
+  height: 50px;
+  width: auto;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+.footer-copy img{
+ width: 25px;
+}
+.sakura-footer img{
+  float: right;
 }
