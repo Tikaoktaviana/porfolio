@@ -7,7 +7,7 @@ body{
   font-family: 'Comic Neue', cursive;
   margin: 0;
   padding: 0;
-  cursor: url(help)auto;
+  box-sizing: border-box;
 }
 .topnav {
   overflow: hidden;
@@ -46,73 +46,58 @@ body{
 }
 
 /**tetst **/
-.cont-sosmed{
-  text-decoration: none;
-  display: inline-block;
-  height: 100px;
-  margin: 5% auto;
-  max-width: 1000px;
-  padding: 10px;
-  position: relative;
-  width: 100%;
-
+.col-text {
+  height:20em;
 }
-.cont-sosmed ul{
-  font-family: "trebuchet ms",sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  list-style: none !important;
-  margin: 100px 500px;
-  
+.grid-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
 }
-.cont-sosmed ul li{
-  display: inline-block;
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px;
+  padding-top: 200px;
   float: left;
-  margin: 0;
-  padding: 1000px;
   justify-content: space-between;
-  transition: all 1s ease 0s;
-  width: 100%;
+}
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text{
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+}
+.Aligner-item {
+  width: 60%;
+  font-size: 25px;
+}
+.col-image {
+  background-image: url(./img-about/sakura-about.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  text-align: center;
+  margin-top: 100px;
 
-}
-.cont-sosmed ul li:hover {
-  width: 90%;
-}
-
-.cont-sosmed ul li {
-  display: inline-block;
-  float: left;
-  margin: 0;
-  padding: 10px;
-  justify-content: space-between;
-  transition: all 1s ease 0s;
-  width: 80%;
-  padding-top: 10px;
-  
-}
-li.sosial-insta {
-  background: #f8b7e0 !important;
-  right: 0;
-  top: 0;
-  z-index: 10;
-  border-radius: 20px;
-  padding: 0 20px;
-}
-li.sosial-gmail {
-  background: #d38baf !important;
-  right: 0;
-  top: 0;
-  z-index: 10;
-  border-radius: 20px;
-}
-.cont-sosmed ul li a {
-  color: #fff !important;
-  text-decoration: none;
-  padding: 0 20px;
-}
-li .sosial-insta i a{
-  padding: 100px;
 }
 @media (max-width: 640px) {
   .grid-flex {
@@ -136,6 +121,8 @@ li .sosial-insta i a{
   }
   .Aligner-item {
     width: 90%;
+    font-family:  'Comic Neue', cursive;
+    font-size: 20px;
   }
 }
 .text-name{
@@ -146,7 +133,27 @@ li .sosial-insta i a{
  margin-top:-10px;
 
 }
-
+.text-container{
+    background-color: #f78bb6;
+    margin-top: 100px;
+    margin-right: 50px;
+    position:inherit;
+    margin-left: -10px;
+    width: 600px;
+    border: 5px dotted rgb(255, 255, 255);
+    border-radius: 2px;
+}
+.about-img{
+    float: right;
+    padding-left: 200px;
+}
+.about-img img{
+    padding-top: 40px;
+    padding-left: 70px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
 /**sakura-animasi**/
 /*-----------------------------------
 sakura_block
@@ -255,51 +262,7 @@ img.parts_15,img.parts_18{
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
 }
-/***test35**/
 
-
-
-.naglowek {
-  margin: 200px auto;
-  max-width:300px;
- 
-}
-
-#navigation a{
-  font-size: 1.2em;
-  width: 300px;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  border-radius: 3px;
-}
-
-#navigation a{
-  text-decoration: none;
-  display: flex;
-  gap: 5px;
-  padding-bottom: 5px;
-  padding-top: 10px;
-}
-
-#navigation a:hover {
-  color: rgb(255, 255, 255);
-  background: #f77bac;
-  border: 1px solid rgb(173, 73, 73);
-  border-bottom: none;
-}
-.gmail{
-  background-color: #f4d1e5;
-  border-radius: 10px;
-}
-.ig{
-  background-color:#f4d1e5 ;
-  border-radius: 10px;
-  border-color: #000000;
-  margin-top: 5px;
-}
-.gmail a{
-  padding-top: 100px;
-}
 .sakura-background{
   float: right;
   position: relative;
