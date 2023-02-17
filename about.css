@@ -411,3 +411,53 @@ img.parts_15,img.parts_18{
       transform: translateY(-6px);
   }
 }
+#slider{
+  overflow: hidden;
+  width: 100vw;
+}
+#slider figure{
+  position: relative;
+  width: 600%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img{
+  width: 16.6666%;
+  float: left;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    15%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    35%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    55%{
+        left: -200%;
+    }
+    60%{
+        left: -300%;
+    }
+    75%{
+        left: -300%;
+    }
+    80%{
+        left: -400%;
+    }
+    95%{
+        left: -400%;
+    }
+    100%{
+        left: -500%;
+    }
+}
