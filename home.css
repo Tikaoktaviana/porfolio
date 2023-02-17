@@ -308,22 +308,6 @@ img.parts_15,img.parts_18{
  height: 50%;
 }
 
- 
-.gambar{
-	width: 300px;
-	float: left;
-	margin-right: 10px;
-}
-.gambar1{
-	width: 200px;
-	float: right;
-	margin-right: 220px;
-  margin-top: 100px;
-}
-.kotak1 .gambar1 img{
-  height: 100px;
-  margin-top: 100px;
-}
 .kotak1 p{
   max-width: 400px;
   padding-left: 50px;
@@ -354,7 +338,8 @@ img.parts_15,img.parts_18{
   height: 50px;
   width: auto;
   font-family: sans-serif;
-  padding-top: 15px;
+  padding-top: 30px;
+  justify-content: center;
 }
 .footer-copy img{
  width: 25px;
