@@ -54,14 +54,22 @@ body{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
 }
 .col {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding-top: 430px;
+  padding: 20px;
+  padding-top: 200px;
   float: left;
   justify-content: space-between;
 }
@@ -72,23 +80,23 @@ body{
   order: -1;
 }
 .col-text{
-  display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 65px;
+  padding: 10px;
+  bottom: 10px;
+  left: 10%;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 .Aligner-item {
-  width: 60%;
+  width: 600px;
   font-size: 25px;
+  font-family:  'Comic Neue', cursive;
+  padding-bottom: 0;
 }
-.col-image {
-  background-position:center;
-  background-repeat: no-repeat;
-  margin-top: -10px;
 
-}
 @media (max-width: 640px) {
   .grid-flex {
+    height: 40em;
     display: -webkit-flex;
     -webkit-flex-direction: column;
     flex-direction: column; 
@@ -96,16 +104,7 @@ body{
   .col {
     order:vertical;
   }
-  .col-left {
-    -webkit-box-ordinal-group:0;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    
-  }
-  .Aligner-item {
-    width: 90%;
-  }
+
 }
 .text-name{
   padding-left: 30px;
@@ -113,6 +112,81 @@ body{
 }
 .home-img {
  margin-top:-10px;
+
+}
+.text-container{
+  background-color: #f78bb6;
+  margin-top: 50px;
+  margin-right: 50px;
+  position:inherit;
+  margin-left: 50px;
+  width: 650px;
+  border: 5px dotted rgb(255, 255, 255);
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+.about-img{
+    float: right;
+    padding-left: 200px;
+}
+.about-img img{
+    padding-top: 40px;
+    padding-left: 70px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+.col-img{
+  background-image: url(./img-about/sakura-about.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 200px;
+  background-size: contain;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/**test4**/
+.text2 {
+  padding: 5px;
+}
+
+.img1 {
+  text-align: center;
+  padding: 70px;
+  margin-left: 250px;
+}
+
+.img2 {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+
+}
+.experience-img img{
+  padding-top: 40px;
+  padding-left: 70px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+.col-image1{
+  background-image: url(./img-about/sakura-about.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 20px;
+  background-size: contain;
+  margin-top: 100px;
+  padding: 106px;
+  float: right;
+  display: initial;
+  position: fixed;
+  margin-left: 400px;
 
 }
 
@@ -234,6 +308,46 @@ img.parts_15,img.parts_18{
  height: 50%;
 }
 
+ 
+.gambar{
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+}
+.gambar1{
+	width: 200px;
+	float: right;
+	margin-right: 220px;
+  margin-top: 100px;
+}
+.kotak1 .gambar1 img{
+  height: 100px;
+  margin-top: 100px;
+}
+.kotak1 p{
+  max-width: 400px;
+  padding-left: 50px;
+}
+.container2{
+  background-color: #f78bb6;
+  margin-top: 100px;
+  margin-right: 50px;
+  position:inherit;
+  margin-left: 50px;
+  width: 600px;
+  border: 5px dotted rgb(255, 255, 255);
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 120px;
+  padding-bottom: 50px;
+}
+.text-experience p{
+  width: 90%;
+  font-family:  'Comic Neue', cursive;
+  font-size: 25px;
+  color: #000000;
+}
 .footer-copy {
   background-color: #ffd5ea;
   text-align: center;
@@ -245,6 +359,25 @@ img.parts_15,img.parts_18{
 .footer-copy img{
  width: 25px;
 }
-.sakura-footer img{
-  float: right;
+/**test6**/
+
+@media (max-width: 640px) {
 }
+.blob-1{
+  position: absolute;
+  height: 100px;
+  top:30%;
+  left: 15%;
+  bottom: 20%;
+}
+
+.blob-1 img{
+  height: 300px;
+  width: 200px;
+
+}
+.animation-container{
+  max-width: 1000px;
+  max-height: 500px;
+}
+
