@@ -382,6 +382,16 @@ img.parts_15,img.parts_18{
   font-size: 25px;
   font-family: 'Comic Neue', cursive;
   color: #000000;
+}
+.gmail img{
+  margin:-5px;
+}
+.gmail{
+  padding: 12px;
+
+}
+.ig{
+  padding: 12px;
 
 }
 .ig a{
@@ -389,8 +399,16 @@ img.parts_15,img.parts_18{
   font-size: 25px;
   font-family:'Comic Neue', cursive ;
   color: #000000;
-  
+  padding-bottom: 15px;
+  text-align: center;
+  position: relative;
 }
+.ig img {
+  border-color: #000000 5px;
+  margin-top: 10px;
+  padding-bottom: 0;
+  margin:-5px;
+}  
 .gmail:hover{
-  background-color: #ffffff;
+
 }
