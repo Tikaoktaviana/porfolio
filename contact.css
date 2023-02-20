@@ -316,12 +316,13 @@ img.parts_15,img.parts_18{
 
 
 .footer-copy {
-  background-color: #ffd5ea;
+  background-color: #f9c4e5;
   text-align: center;
   height: 50px;
   width: auto;
   font-family: sans-serif;
-  padding-top: 15px;
+  padding-top: 30px;
+  justify-content: center;
 }
 .footer-copy img{
  width: 25px;

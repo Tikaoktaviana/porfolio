@@ -554,7 +554,9 @@ img.parts_15,img.parts_18{
 
   }
   .slider-container{
-
+    max-width: 700px;
+    max-height: 600px;
+    margin-top: 20px;
   }
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -636,10 +638,14 @@ img.parts_15,img.parts_18{
 }
 .gallery-2-container{
   max-width: auto;
+  max-height: 600px;
   position: relative;
   justify-content: center; 
   margin: 100px; 
   padding: 50px;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .gallery-2 {
   margin: 5px;
@@ -653,7 +659,6 @@ img.parts_15,img.parts_18{
   width: 40%;
   border-radius: 5px;
   margin-top: 20px;
-  padding-bottom: 10px;
 }
 
 
@@ -668,11 +673,12 @@ img.parts_15,img.parts_18{
   text-align: center;
 }
 .all-gallery2-container{
-  margin-top: 10px;
+  margin-top: 50px;
   
 }
-.banner-title{
+.banner1-title{
   padding: 10px;
+  padding-left: 300px;
 
 }
 .banner-title img{
@@ -694,4 +700,23 @@ img.parts_15,img.parts_18{
 }
 .all-gallery6-container{
   margin-top: 40px;
+}
+.banner2-title{
+ margin-bottom: -80px;
+ height: 100px;
+ padding-top: 20px;
+ position: relative;
+ padding-left: 300px;
+
+}
+.gallery-1-container{
+  max-width: auto;
+  position: relative;
+  max-height: 600px;
+  justify-content: center; 
+  margin: 100px; 
+  padding: 50px;
+  margin-top:10px;
+   padding-left: 50px;
+  padding-right: 50px;
 }
