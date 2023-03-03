@@ -462,96 +462,14 @@ img.parts_15,img.parts_18{
         left: -500%;
     }
 }
-.content {
-    height: 300px;
-    width: 400px;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  input {
-    display: none;
-  }
-  .slides {
-    display: flex;
-    width: 500%;
-    height: 100%;
 
-  }
-  .slide {
-    width: 20%;
-    transition: 0.6s;
-
-  }
-  .slide img {
-    width: 100%;
-    height: 240px;
-    border-radius: 20px 30px;
-
-  }
-  #slide1:checked ~ .s1 {
-    margin-left: 0;
-  }
-  #slide2:checked ~ .s1 {
-    margin-left: -20%;
-  }
-  #slide3:checked ~ .s1 {
-    margin-left: -40%;
-  }
-  #slide4:checked ~ .s1 {
-    margin-left: -60%;
-  }
-  #slide5:checked ~ .s1 {
-    margin-left: -80%;
-  }
-  .navigation {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 20px;
-    display: flex;
-    bottom: 120px;
-
-  }
-  .bar {
-    width: 20px;
-    height: 20px;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: #dd428d;
-    border-radius: 50%;
-    margin: 0.4rem;
-    cursor: pointer;
-  }
-  .bar:hover {
-    background-color: #ffbddd;
-    transition: 0.2s;
-  }
-  @media (max-width: 500px) {
-    .content {
-      height: 18rem;
-      width: 35rem;
-      overflow: hidden;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    img {
-      max-width: 100%;
-    }
-    .navigation {
-      bottom: 0.8rem;
-    }
-    .bar {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-  }
   .title{
     padding-left: 70px;
 
+  }
+  .slide{
+    cursor: pointer;
+    
   }
   .slider-container{
     max-width: 700px;
@@ -595,7 +513,6 @@ img.parts_15,img.parts_18{
 .all-gallery-container{
   background-color: #ffd4ef;
   height: 600px;
-  margin-top: 500px;
   
 }
 .all-gallery2-container{
@@ -719,4 +636,67 @@ img.parts_15,img.parts_18{
   margin-top:10px;
    padding-left: 50px;
   padding-right: 50px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+}
+
+/* Caption text */
+.text {
+  color: #d0037b;
+  font-size: 25px;
+  position: absolute;
+  padding-left: 350px;
+  width: 550px;
+  height: 35px;
+  justify-content: center;
+  background-color: #f0b9dd;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 20px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #f51e9c;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
