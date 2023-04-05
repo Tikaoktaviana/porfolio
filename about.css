@@ -389,8 +389,7 @@ img.parts_15,img.parts_18{
 
 }
 .animation-container{
-  max-width: 1000px;
-  max-height: 500px;
+  margin-top: -100px;
 }
 
 @keyframes blob {
@@ -460,4 +459,7 @@ img.parts_15,img.parts_18{
     100%{
         left: -500%;
     }
+}
+.animation-container{
+  margin:100px;
 }
