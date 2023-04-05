@@ -366,17 +366,17 @@ img.parts_15,img.parts_18{
 }
 .blob-1{
   position: absolute;
-  height: 100px;
-  top:30%;
+  height: 40px;
+  top: 20%;
   left: 15%;
-  bottom: 20%;
+  bottom: 40%;
 }
 .blob-2{
   position: absolute;
-  height: 100px;
-  right: 15%;
-  bottom:5%;
-  top: 110%;
+  height: 30px;
+  left: 50%;
+  bottom: 5%;
+  top: 51%;
 }
 .blob-1 img{
   animation: blob 13s 1s infinite normal forwards;
