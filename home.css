@@ -81,14 +81,12 @@ body{
 }
 .col-text{
   align-items: center;
-  padding: 10px;
+    padding: 10px;
   bottom: 10px;
   left: 10%;
-  padding-top: 20px;
-  padding-bottom: 50px;
 }
 .Aligner-item {
-  width: 600px;
+  width: 500px;
   font-size: 25px;
   font-family:  'Comic Neue', cursive;
   padding-bottom: 0;
@@ -104,6 +102,10 @@ body{
   .col {
     order:vertical;
   }
+  .col-text div p {
+    padding: 1em;
+    
+  }
 
 }
 .text-name{
@@ -111,21 +113,21 @@ body{
   
 }
 .home-img {
- margin-top:300px;
+ margin-top:-10px;
 
 }
 .text-container{
   background-color: #f78bb6;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-right: 50px;
   position:inherit;
   margin-left: 50px;
-  width: 650px;
+  width: 600px;
   border: 5px dotted rgb(255, 255, 255);
   border-radius: 2px;
   padding-left: 10px;
   padding-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .about-img{
     float: right;
@@ -307,24 +309,44 @@ img.parts_15,img.parts_18{
 .sakura-background img{
  height: 50%;
 }
-
+.sakura-img{
+  float: left;
+  position: inherit;
+}
+ 
+.gambar{
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+}
+.gambar1{
+	width: 200px;
+	float: right;
+	margin-right: 220px;
+  margin-top: 100px;
+}
+.kotak1 .gambar1 img{
+  height: 100px;
+  margin-top: 100px;
+}
 .kotak1 p{
   max-width: 400px;
   padding-left: 50px;
 }
 .container2{
-  background-color: #f78bb6;
   margin-top: 100px;
   margin-right: 50px;
   position:inherit;
   margin-left: 50px;
   width: 600px;
-  border: 5px dotted rgb(255, 255, 255);
   border-radius: 2px;
   padding-left: 10px;
   padding-top: 10px;
-  margin-bottom: 120px;
-  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+.container3 .img{
+  float: left;
+
 }
 .text-experience p{
   width: 90%;
@@ -333,13 +355,12 @@ img.parts_15,img.parts_18{
   color: #000000;
 }
 .footer-copy {
-  background-color: #f0b9dd;
+  background-color: #ffd5ea;
   text-align: center;
   height: 50px;
   width: auto;
   font-family: sans-serif;
-  padding-top: 30px;
-  justify-content: center;
+  padding-top: 15px;
 }
 .footer-copy img{
  width: 25px;
@@ -350,19 +371,100 @@ img.parts_15,img.parts_18{
 }
 .blob-1{
   position: absolute;
-  height: 100px;
-  top:30%;
+  height: 40px;
+  top: 20%;
   left: 15%;
-  bottom: 20%;
+  bottom: 40%;
 }
-
+.blob-2{
+  position: absolute;
+  height: 30px;
+  left: 50%;
+  bottom: 5%;
+  top: 51%;
+}
 .blob-1 img{
-  height: 300px;
+  animation: blob 13s 1s infinite normal forwards;
+  height: 200px;
   width: 200px;
+}
+.blob-2 img{
+  animation: blob 13s 1s infinite normal forwards;
+  height: 200px;
 
 }
 .animation-container{
-  max-width: 1000px;
-  max-height: 500px;
+  margin-top: -100px;
 }
 
+@keyframes blob {
+  
+  0%, 100%{
+      transform: translateY(0);
+  }
+  10%, 30%, 50%, 70%{
+      transform: translateY(-8px);
+  }
+  20%, 40%, 60%{
+      transform: translateY(8px);
+  }
+  80%{
+      transform: translateY(6px);
+  }
+  90%{
+      transform: translateY(-6px);
+  }
+}
+#slider{
+  overflow: hidden;
+  width: 100vw;
+}
+#slider figure{
+  position: relative;
+  width: 600%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img{
+  width: 16.6666%;
+  float: left;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    15%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    35%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    55%{
+        left: -200%;
+    }
+    60%{
+        left: -300%;
+    }
+    75%{
+        left: -300%;
+    }
+    80%{
+        left: -400%;
+    }
+    95%{
+        left: -400%;
+    }
+    100%{
+        left: -500%;
+    }
+}
+.animation-container{
+  margin:100px;
+}
