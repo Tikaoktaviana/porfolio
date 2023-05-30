@@ -461,7 +461,45 @@ img.parts_15,img.parts_18{
         left: -500%;
     }
 }
-.text-experience .p{
-  display: flex;
-  float: left;
+.header {
+  width: 100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
+
+ img ,#spacer{
+  width: 80px;
+  
+}
+
+.header-text {
+  text-align: center;
+  font-size: 30px;
+}
+img {
+  padding-top: -200px;
+  padding-bottom: 20px;
+}
+#ignielNewsletter {width:100%; min-width:300px; height:auto; background:#fff; border-radius:7.5px; box-shadow:0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24); display: block; margin:auto; line-height:40px; padding:0px}
+#ignielNewsletter .email__ {padding:15px 15px 5px;}
+#ignielNewsletter .email {margin:auto; color:#777;} 
+#ignielNewsletter .medsos__ {padding:15px 0px; line-height:0px; border-top:1px solid #cccfe2;}
+#ignielNewsletter form {display:-webkit-box; display:-webkit-flex; display:-moz-box; display:-ms-flexbox; display:flex; flex-wrap:nowrap; align-items:center; margin:0px 0px 15px; padding:0px}
+#ignielNewsletter form:before {left:30px; position:absolute; display:block; width:20px; height:20px; background:url("data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z' fill='%23717171'></path></svg>") no-repeat; content:'';}
+#ignielNewsletter input {width: calc(100% - 35px); height:35px; border:1px solid #cccfe2; border-right:0px; padding:8px 10px 8px 40px; font-size:12px; border-radius:50px 0px 0px 50px;}
+#ignielNewsletter button {width:35px; height:35px; margin:0px; padding:0px; background-color:var(--color-main); border:0px; box-shadow:none; vertical-align:top; cursor:pointer; transition:all .3s ease; background-image:unset; border-radius:0px 50px 50px 0px;}
+#ignielNewsletter button:hover, #ignielNewsletter button:focus {background-color:var(--color-hover);}
+#ignielNewsletter button:before {display:inline-block; width:20px; height:20px; margin:0px; background:url("data:image/svg+xml,<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M2,21L23,12L2,3V10L17,12L2,14V21Z' fill='%23fff'></path></svg>") no-repeat; content:''; vertical-align:-3px;}
+#ignielNewsletter .medsos {width:100%; text-align:center;}
+#ignielNewsletter .medsos svg {width:20px;height:20px;margin-top:7px}
+#ignielNewsletter .medsos svg path {fill:#fff}
+#ignielNewsletter .medsos a {display:inline-block; margin-right:7px; width:35px; height:35px; box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.4); transition: all ease-in-out 300ms; border-radius:100px;}
+#ignielNewsletter .medsos a:last-child {margin-right:0px;}
+#ignielNewsletter .medsos a:hover {box-shadow: 0px 23px 15px -3px rgba(0,0,0,0.25); transform: translate(0px, -10px) scale(1.05);}
+#ignielNewsletter .medsos .facebook{background:#3a579a}
+#ignielNewsletter .medsos .twitter {background:#00abf0}
+#ignielNewsletter .medsos .googleplus {background:#df4a32}
+#ignielNewsletter .medsos .youtube {background:#cc181e}
+#ignielNewsletter .medsos .instagram {background:#992ebc}
+#ignielNewsletter .medsos .codepen {background:#292E34}
