@@ -461,3 +461,7 @@ img.parts_15,img.parts_18{
         left: -500%;
     }
 }
+.text-experience .p{
+  display: flex;
+  float: left;
+}
