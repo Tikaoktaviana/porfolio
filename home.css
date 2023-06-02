@@ -313,7 +313,12 @@ img.parts_15,img.parts_18{
   float: left;
   position: inherit;
 }
- 
+.kiri{float:left;display:block;width:200px}
+.kanan{float:right;
+display:block;width:300px;
+margin-left: 100px;
+}
+
 .gambar{
 	width: 300px;
 	float: left;
