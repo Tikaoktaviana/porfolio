@@ -44,7 +44,14 @@ body{
 .text-home{
     text-align: right;
 }
-
+.img-my-foto{
+  float: left;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+.figure{
+  margin-top: 100px;
+}
 /**tetst **/
 .col-text {
   height:20em;
@@ -85,7 +92,7 @@ body{
   bottom: 10px;
   left: 10%;
 }
-.Aligner-item {
+.aligner-item {
   width: 500px;
   font-size: 25px;
   font-family:  'Comic Neue', cursive;
@@ -121,13 +128,13 @@ body{
   margin-top: 100px;
   margin-right: 50px;
   position:inherit;
-  margin-left: 50px;
+  margin-left: 40px;
   width: 600px;
   border: 5px dotted rgb(255, 255, 255);
   border-radius: 2px;
   padding-left: 10px;
   padding-top: 10px;
-  margin-bottom: 20px;
+
 }
 .about-img{
     float: right;
@@ -313,12 +320,16 @@ img.parts_15,img.parts_18{
   float: left;
   position: inherit;
 }
-.kiri{float:left;display:block;width:200px}
-.kanan{float:right;
-display:block;width:300px;
-margin-left: 100px;
+.right{float:left;display:block;width:200px}
+.left .img {
+ float:left;
+ position: relative;
 }
+img {
+  float: right;
+  position: relative;
 
+}
 .gambar{
 	width: 300px;
 	float: left;
@@ -472,4 +483,150 @@ margin-left: 100px;
 }
 .animation-container{
   margin:100px;
+}
+figure {
+  display: table;
+  margin-top: 100px;
+  max-width: 500px;
+  left: 100px;
+  position: relative;
+}
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+#title-block, #more-info, footer {
+  text-align: center;
+}
+#tribute-info {
+  display: flex;
+  flex-flow: row wrap;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: #34d399;
+}
+#img-div {
+  margin: auto;
+}
+#image {
+  width: 100%;
+  display: block;
+}
+#space-time-img, #mc2-building {
+  width: 100%;
+  margin: auto;
+}
+#einstein-image {
+  border-radius: 50%;
+  margin: auto;
+  align-self: center;
+}
+@media (min-width: 280px) {
+  h1 {
+      font-size: xx-large;
+  }
+  h2 {
+      font-size: x-large;
+  }
+  h3 {
+      font-size: large;
+  }
+  #main p {
+      font-size: smaller;
+  }
+  #tribute-link {
+      font-size: smaller;
+  }
+  footer {
+      font-size: smaller;
+  }
+  .content, h2, #quote {
+      flex: 1 100%;
+  }
+  #einstein-image {
+      max-width: 219px;
+  }
+  #quote {
+      text-align: center;
+      align-self: center;
+  }
+}
+@media (min-width: 360px) {
+  #image, #space-time-img, #mc2-building {
+      max-width: fit-content;
+  }
+}
+@media (min-width: 720px) {
+  #main {
+      margin: 0 5% 5% 5%;
+  }
+  h1 {
+      font-size: xxx-large;
+  }
+  h2 {
+      font-size: xx-large;
+  }
+  h3 {
+      font-size: x-large;
+  }
+  #main p {
+      font-size: larger;
+  }
+  #tribute-link {
+      font-size: larger;
+  }
+  footer {
+      font-size: medium;
+  }
+  .content, #quote {
+      flex: 1 50%;
+  }
+  #img-div {
+      margin-left: 3%;
+  }
+  #image {
+      max-width: 180px;
+  }
+  #space-time-img {
+      margin-right: 3%;
+      max-width: 250px;
+  }
+  #mc2-building {
+      margin-left: 3%;
+      max-width: 290px;
+      align-self: center;
+  }
+  #einstein-image {
+      max-width: 169px;
+  }
+  #quote {
+      text-align: start;
+  }
+  #tribute-info > :nth-child(1) { order: 1; }
+  #tribute-info > :nth-child(2) { order: 3; }
+  #tribute-info > :nth-child(3) { order: 2; }
+  #tribute-info > :nth-child(4) { order: 4; }
+  #tribute-info > :nth-child(5) { order: 5; }
+  #tribute-info > :nth-child(6) { order: 6; }
+  #tribute-info > :nth-child(7) { order: 8; }
+  #tribute-info > :nth-child(8) { order: 7; }
+  #tribute-info > :nth-child(9) { order: 9; }
+  #tribute-info > :nth-child(10) { order: 10; }
+}
+@media (min-width: 1080px) {
+  #main {
+      margin: 0 10% 5% 10%;
+  }
+  #image, #space-time-img, #mc2-building {
+      max-width: fit-content;
+  }
+  #einstein-image {
+      max-width: 219px;
+  }
+  #tribute-info > :nth-child(8) { 
+      flex-basis: calc(100% - 300px - 3%); 
+  }
 }
