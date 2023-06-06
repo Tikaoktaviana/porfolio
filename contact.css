@@ -55,7 +55,7 @@ body{
 }
 /**tetst **/
 .col-text {
-  height:20em;
+
 }
 .grid-flex {
   display: -webkit-box;
@@ -130,7 +130,6 @@ body{
   margin-right: 50px;
   position:inherit;
   margin-left: 40px;
-  width: 600px;
   border: 5px dotted rgb(255, 255, 255);
   border-radius: 2px;
   padding-left: 10px;
