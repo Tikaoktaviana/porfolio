@@ -57,48 +57,7 @@ body{
 .col-text {
 
 }
-.grid-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  flex-direction: row; 
-  -webkit-flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-}
-.col {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 20px;
-  padding-top: 200px;
-  float: left;
-  justify-content: space-between;
-}
-.col-left {
-  -webkit-box-ordinal-group:-1;
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-}
-.col-text{
-  align-items: center;
-    padding: 10px;
-  bottom: 10px;
-  left: 10%;
-}
-.aligner-item {
-  width: 500px;
-  font-size: 25px;
-  font-family:  'Comic Neue', cursive;
-  padding-bottom: 0;
-}
+
 
 @media (max-width: 640px) {
   .grid-flex {
@@ -308,47 +267,12 @@ img.parts_15,img.parts_18{
   animation-delay: 5s;
 }
 
-.sakura-background{
-  float: right;
-  position: relative;
-  text-align: center ;
-}
-.sakura-background img{
- height: 50%;
-}
-.sakura-img{
-  float: left;
-  position: inherit;
-}
-.right{float:left;display:block;width:200px}
-.left .img {
- float:left;
- position: relative;
-}
-img {
-  float: right;
-  position: relative;
-
-}
 .gambar{
 	width: 300px;
 	float: left;
 	margin-right: 10px;
 }
-.gambar1{
-	width: 200px;
-	float: right;
-	margin-right: 220px;
-  margin-top: 100px;
-}
-.kotak1 .gambar1 img{
-  height: 100px;
-  margin-top: 100px;
-}
-.kotak1 p{
-  max-width: 400px;
-  padding-left: 50px;
-}
+
 .container2{
   margin-top: 100px;
   margin-right: 50px;
