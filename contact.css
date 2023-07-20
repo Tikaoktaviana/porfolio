@@ -17,6 +17,7 @@ body{
 .topnav {
   overflow: hidden;
   background-color: #dd428d;
+  position: relative;
 }
 .home-img{
   padding-top: 5px;
@@ -34,7 +35,6 @@ body{
 
 .topnav a:hover {
   background-color: #ffb7da;
-  height: 40px;
   color: black;
   border-radius: 20px;
 }
