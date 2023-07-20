@@ -45,12 +45,6 @@ body{
     text-align: right;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #1A237E, #880E4F);
-  height: 100%;
-}
 
 .container {
   position: absolute;
