@@ -635,3 +635,6 @@ a:hover {
   width: 500px;
 
 }
+.container-about-me{
+  max-width: 1000px;
+}
