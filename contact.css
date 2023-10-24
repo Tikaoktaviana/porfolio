@@ -159,9 +159,10 @@ p {
 .fa {
   padding: 30px;
   font-size: 40px;
-  width: 50px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 15px 12px;
   border-radius: 50%;
+  height: 22px;
 }
