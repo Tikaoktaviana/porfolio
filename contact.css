@@ -133,7 +133,10 @@ body{
 .btn-google::before {
   background: #304FFE;
 }
-
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 @keyframes anim {
   0% {
     left: -150%;
