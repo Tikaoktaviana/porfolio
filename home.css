@@ -631,3 +631,7 @@ a:hover {
       flex-basis: calc(100% - 300px - 3%); 
   }
 }
+.about-img{
+  width: 400px;
+
+}
