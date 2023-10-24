@@ -110,3 +110,10 @@ footer {
   background-color: DarkSalmon;
   color: white;
 }
+#container-footer {
+  position: relative;
+}
+#copyright {
+  position: absolute;
+  bottom: 0;
+}
