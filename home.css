@@ -204,7 +204,7 @@ body{
 sakura_block
 -----------------------------------*/
 #sakura_block{
-  width: 100%;
+  width: 90%;
 }
 #sakura_block .sakura_parts_box{
   position: relative;
