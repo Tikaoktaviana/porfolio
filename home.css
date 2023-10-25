@@ -44,20 +44,160 @@ body{
 .text-home{
     text-align: right;
 }
-.img-my-foto{
-  margin-top: 10px;
-  margin-left: 50px;
+
+/**tetst **/
+.col-text {
+  height:20em;
+}
+.grid-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px;
+  padding-top: 200px;
+  float: left;
+  justify-content: space-between;
+}
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text{
+  align-items: center;
+    padding: 10px;
+  bottom: 10px;
+  left: 10%;
+}
+.Aligner-item {
+  width: 500px;
+  font-size: 25px;
+  font-family:  'Comic Neue', cursive;
+  padding-bottom: 0;
 }
 
-@media (max-width: 640px) 
-{}
+@media (max-width: 640px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+   }
+  .col {
+    order:vertical;
+  }
+  .col-text div p {
+    padding: 1em;
+    
+  }
+
+}
+.text-name{
+  padding-left: 30px;
+  
+}
+.home-img {
+ margin-top:-10px;
+
+}
+.text-container{
+  background-color: #f78bb6;
+  margin-top: 100px;
+  margin-right: 50px;
+  position:inherit;
+  margin-left: 50px;
+  width: 600px;
+  border: 5px dotted rgb(255, 255, 255);
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.about-img{
+    float: right;
+    padding-left: 200px;
+}
+.about-img img{
+    padding-top: 40px;
+    padding-left: 70px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+.col-img{
+  background-image: url(./img-about/sakura-about.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 200px;
+  background-size: contain;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/**test4**/
+.text2 {
+  padding: 5px;
+}
+
+.img1 {
+  text-align: center;
+  padding: 70px;
+  margin-left: 250px;
+}
+
+.img2 {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+
+}
+.experience-img img{
+  padding-top: 40px;
+  padding-left: 70px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+.col-image1{
+  background-image: url(./img-about/sakura-about.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 20px;
+  background-size: contain;
+  margin-top: 100px;
+  padding: 106px;
+  float: right;
+  display: initial;
+  position: fixed;
+  margin-left: 400px;
+
+}
 
 /**sakura-animasi**/
 /*-----------------------------------
 sakura_block
 -----------------------------------*/
 #sakura_block{
-  width: 90%;
+  width: 100%;
 }
 #sakura_block .sakura_parts_box{
   position: relative;
@@ -169,15 +309,57 @@ img.parts_15,img.parts_18{
 .sakura-background img{
  height: 50%;
 }
-.sakura-img{
-  float: left;
-  position: inherit;
-}
-.right{float:left;display:block;width:200px}
-.left .img {
- float:left;
- position: relative;
 
+ 
+.gambar{
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+}
+.gambar1{
+	width: 200px;
+	float: right;
+	margin-right: 220px;
+  margin-top: 100px;
+}
+.kotak1 .gambar1 img{
+  height: 100px;
+  margin-top: 100px;
+}
+.kotak1 p{
+  max-width: 400px;
+  padding-left: 50px;
+}
+.container2{
+  background-color: #f78bb6;
+  margin-top: 100px;
+  margin-right: 50px;
+  position:inherit;
+  margin-left: 50px;
+  width: 600px;
+  border: 5px dotted rgb(255, 255, 255);
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.text-experience p{
+  width: 90%;
+  font-family:  'Comic Neue', cursive;
+  font-size: 25px;
+  color: #000000;
+}
+.footer-copy {
+  background-color: #ffd5ea;
+  text-align: center;
+  height: 50px;
+  width: auto;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+.footer-copy img{
+ width: 25px;
+}
 /**test6**/
 
 @media (max-width: 640px) {
@@ -280,167 +462,4 @@ img.parts_15,img.parts_18{
 }
 .animation-container{
   margin:100px;
-}
-figure {
-  display: table;
-  margin-top: 100px;
-  max-width: 500px;
-  left: 100px;
-  position: relative;
-}
-figcaption {
-  display: table-caption;
-  caption-side: bottom;
-}
-#title-block, #more-info, footer {
-  text-align: center;
-}
-#tribute-info {
-  display: flex;
-  flex-flow: row wrap;
-}
-a {
-  color: #fff;
-}
-a:hover {
-  color: #34d399;
-}
-#img-div {
-  margin: auto;
-}
-#image {
-  width: 100%;
-  display: block;
-}
-#space-time-img, #mc2-building {
-  width: 100%;
-  margin: auto;
-}
-#einstein-image {
-  border-radius: 50%;
-  margin: auto;
-  align-self: center;
-}
-@media (min-width: 280px) {
-  h1 {
-      font-size: xx-large;
-  }
-  h2 {
-      font-size: x-large;
-  }
-  h3 {
-      font-size: large;
-  }
-  #main p {
-      font-size: smaller;
-  }
-  #tribute-link {
-      font-size: smaller;
-  }
-  footer {
-      font-size: smaller;
-  }
-  .content, h2, #quote {
-      flex: 1 100%;
-  }
-  #einstein-image {
-      max-width: 219px;
-  }
-  #quote {
-      text-align: center;
-      align-self: center;
-  }
-}
-@media (min-width: 360px) {
-  #image, #space-time-img, #mc2-building {
-      max-width: fit-content;
-  }
-}
-@media (min-width: 720px) {
-  #main {
-      margin: 0 5% 5% 5%;
-  }
-  h1 {
-      font-size: xxx-large;
-  }
-  h2 {
-      font-size: xx-large;
-  }
-  h3 {
-      font-size: x-large;
-  }
-  #main p {
-      font-size: larger;
-  }
-  #tribute-link {
-      font-size: larger;
-  }
-  footer {
-      font-size: medium;
-  }
-  .content, #quote {
-      flex: 1 50%;
-  }
-  #img-div {
-      margin-left: 3%;
-  }
-  #image {
-      max-width: 180px;
-  }
-  #space-time-img {
-      margin-right: 3%;
-      max-width: 250px;
-  }
-  #mc2-building {
-      margin-left: 3%;
-      max-width: 290px;
-      align-self: center;
-  }
-  #einstein-image {
-      max-width: 169px;
-  }
-  #quote {
-      text-align: start;
-  }
-  #tribute-info > :nth-child(1) { order: 1; }
-  #tribute-info > :nth-child(2) { order: 3; }
-  #tribute-info > :nth-child(3) { order: 2; }
-  #tribute-info > :nth-child(4) { order: 4; }
-  #tribute-info > :nth-child(5) { order: 5; }
-  #tribute-info > :nth-child(6) { order: 6; }
-  #tribute-info > :nth-child(7) { order: 8; }
-  #tribute-info > :nth-child(8) { order: 7; }
-  #tribute-info > :nth-child(9) { order: 9; }
-  #tribute-info > :nth-child(10) { order: 10; }
-}
-@media (min-width: 1080px) {
-  #main {
-      margin: 0 10% 5% 10%;
-  }
-  #image, #space-time-img, #mc2-building {
-      max-width: fit-content;
-  }
-  #einstein-image {
-      max-width: 219px;
-  }
-  #tribute-info > :nth-child(8) { 
-      flex-basis: calc(100% - 300px - 3%); 
-  }
-}
-.about-img{
-  width: 500px;
-
-}
-.container-about-me{
-  max-width: 1000px;
-  max-height: 1200px;
-}
-.container-1{
-  background-color: #f78bb6;
-  height: 500px;
-  width: 1000px;
-  text-align: center;
-}
-.container-1 image{
-  text-align: center;
 }
