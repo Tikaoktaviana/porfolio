@@ -437,6 +437,8 @@ a:hover {
 }
 .container-1{
   background-color: #f78bb6;
+  height: 500px;
+  width: 1000px;
   text-align: center;
 }
 .container-1 image{
