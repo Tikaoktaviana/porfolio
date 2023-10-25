@@ -381,7 +381,7 @@ img.parts_15,img.parts_18{
 .blob-1 img{
   animation: blob 13s 1s infinite normal forwards;
   height: 200px;
-  width: 200px;
+  width: 500px;
 }
 .blob-2 img{
   animation: blob 13s 1s infinite normal forwards;
